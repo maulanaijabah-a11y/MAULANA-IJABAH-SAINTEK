@@ -1,0 +1,332 @@
+/* =========================
+   RESET DAN PENGATURAN DASAR
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f4f7fb;
+    color: #263238;
+    line-height: 1.8;
+}
+
+/* =========================
+   HEADER / BAGIAN PROFIL
+========================= */
+header {
+    background: linear-gradient(135deg, #0f172a, #1e40af);
+    color: white;
+    text-align: center;
+    padding: 60px 20px 50px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 17px;
+    color: #dbeafe;
+    margin-bottom: 25px;
+}
+
+header img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* =========================
+   NAVIGASI
+========================= */
+nav {
+    background: #ffffff;
+    text-align: center;
+    padding: 18px 10px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-block;
+    color: #1e40af;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 14px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #f59e0b;
+}
+
+/* =========================
+   KONTEN UTAMA
+========================= */
+main {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+section,
+aside {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.07);
+}
+
+section h2,
+aside h2,
+footer h2 {
+    color: #1e40af;
+    font-size: 26px;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #f59e0b;
+    display: inline-block;
+}
+
+section p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+/* =========================
+   BAGIAN KEAHLIAN
+========================= */
+#keahlian ul {
+    list-style: none;
+    padding: 0;
+}
+
+#keahlian li {
+    background: #eff6ff;
+    border-left: 5px solid #2563eb;
+    padding: 12px 18px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+}
+
+#keahlian li:hover {
+    background: #dbeafe;
+    transform: translateX(5px);
+}
+
+/* =========================
+   FAKTA MENARIK
+========================= */
+aside {
+    max-width: 960px;
+    margin: 0 auto 30px;
+    border-left: 6px solid #f59e0b;
+}
+
+aside p {
+    color: #475569;
+}
+
+/* =========================
+   TABEL PENGALAMAN KERJA
+========================= */
+#kesukaan {
+    overflow-x: auto;
+}
+
+#kesukaan table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: white;
+}
+
+#kesukaan th {
+    background: #1e40af;
+    color: white;
+    padding: 14px;
+    text-align: left;
+}
+
+#kesukaan td {
+    padding: 14px;
+    border: 1px solid #dbe3ee;
+}
+
+#kesukaan tbody tr:nth-child(even) {
+    background: #eff6ff;
+}
+
+#kesukaan tbody tr:hover {
+    background: #dbeafe;
+}
+
+/* =========================
+   FORM BUKU TAMU
+========================= */
+#buku-tamu form p {
+    margin-bottom: 18px;
+}
+
+#buku-tamu label {
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #334155;
+}
+
+#buku-tamu input,
+#buku-tamu select,
+#buku-tamu textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 15px;
+    background: #f8fafc;
+    color: #263238;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+#buku-tamu input:focus,
+#buku-tamu select:focus,
+#buku-tamu textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+    background: white;
+}
+
+#buku-tamu textarea {
+    resize: vertical;
+}
+
+#buku-tamu button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    background: #1e40af;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: 0.3s ease;
+}
+
+#buku-tamu button:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+#buku-tamu button[type="reset"] {
+    background: #64748b;
+}
+
+#buku-tamu button[type="reset"]:hover {
+    background: #475569;
+}
+
+/* =========================
+   FOOTER / KONTAK
+========================= */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: white;
+    border-bottom-color: #f59e0b;
+}
+
+footer a {
+    display: inline-block;
+    color: #bfdbfe;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #fbbf24;
+}
+
+/* =========================
+   TAMPILAN HP / RESPONSIVE
+========================= */
+@media (max-width: 600px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    header img {
+        width: 135px;
+        height: 135px;
+    }
+
+    nav {
+        padding: 12px 5px;
+    }
+
+    nav a {
+        margin: 5px 7px;
+        font-size: 14px;
+    }
+
+    main {
+        margin: 20px auto;
+        padding: 0 12px;
+    }
+
+    section,
+    aside {
+        padding: 20px 16px;
+        border-radius: 12px;
+    }
+
+    section h2,
+    aside h2,
+    footer h2 {
+        font-size: 22px;
+    }
+
+    section p {
+        text-align: left;
+    }
+
+    #kesukaan table {
+        min-width: 600px;
+    }
+
+    #buku-tamu button {
+        margin-bottom: 8px;
+    }
+}
